@@ -1,18 +1,28 @@
 import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import { Planet } from './planets.js';
+import earthTexture from '../imgs/earth.jpg';
+import sunTexture from '../imgs/sun.jpg';
+import mercuryTexture from '../imgs/mercary.jpg';
+import venusTexture from '../imgs/Venus.jpg';
+import marsTexture from '../imgs/mars.jpg';
+import jupiterTexture from '../imgs/jupiter.jpg';
+import saturnTexture from '../imgs/saturn.jpg';
+import uranusTexture from '../imgs/uranus.jpg';
+import neptuneTexture from '../imgs/neptune.jpg';
+import backdropTexture from '../imgs/backdrop.jpg';
 
 // initialize the scene
 const scene = new THREE.Scene();
 
 // add objects to the scene
-const sun = new Planet(10, 0, "../imgs/sun.jpg");
+const sun = new Planet(10, 0, sunTexture);
 const sunMesh = sun.getMesh();
 scene.add(sunMesh);
 
 // mercury
 
-const mercury = new Planet(2, 15, "../imgs/mercary.jpg");
+const mercury = new Planet(2, 15, mercuryTexture);
 const mercuryMesh = mercury.getMesh();
 scene.add(mercuryMesh);
 
@@ -22,7 +32,7 @@ mercuryPivot.add(mercuryMesh);
 
 // venus
 
-const venus = new Planet(3, 25, "../imgs/Venus.jpg");
+const venus = new Planet(3, 25, venusTexture);
 const venusMesh = venus.getMesh();
 scene.add(venusMesh);
 
@@ -32,7 +42,7 @@ venusPivot.add(venusMesh);
 
 // earth
 
-const earth = new Planet(4, 35, "../imgs/earth.jpg");
+const earth = new Planet(4, 35, earthTexture);
 const earthMesh = earth.getMesh();
 scene.add(earthMesh);
 
@@ -42,7 +52,7 @@ earthPivot.add(earthMesh);
 
 // mars
 
-const mars = new Planet(3, 45, "../imgs/mars.webp");
+const mars = new Planet(3, 45, marsTexture);
 const marsMesh = mars.getMesh();
 scene.add(marsMesh);
 
@@ -52,7 +62,7 @@ marsPivot.add(marsMesh);
 
 // jupiter
 
-const jupiter = new Planet(8, 65, "../imgs/jupiter.jpg");
+const jupiter = new Planet(8, 65, jupiterTexture);
 const jupiterMesh = jupiter.getMesh();
 scene.add(jupiterMesh);
 
@@ -62,7 +72,7 @@ jupiterPivot.add(jupiterMesh);
 
 // saturn
 
-const saturn = new Planet(7, 85, "../imgs/saturn.jpg");
+const saturn = new Planet(7, 85, saturnTexture);
 const saturnMesh = saturn.getMesh();
 scene.add(saturnMesh);
 
@@ -72,7 +82,7 @@ saturnPivot.add(saturnMesh);
 
 // uranus
 
-const uranus = new Planet(5, 105, "../imgs/uranus.jpg");
+const uranus = new Planet(5, 105, uranusTexture);
 const uranusMesh = uranus.getMesh();
 scene.add(uranusMesh);
 
@@ -82,7 +92,7 @@ uranusPivot.add(uranusMesh);
 
 // neptune
 
-const neptune = new Planet(5, 120, "../imgs/neptune.jpg");
+const neptune = new Planet(5, 120, neptuneTexture);
 const neptuneMesh = neptune.getMesh();
 scene.add(neptuneMesh);
 
@@ -93,7 +103,7 @@ neptunePivot.add(neptuneMesh);
 // add backdrop texture
 
 const loader = new THREE.TextureLoader();
-const bgTexture = loader.load('../imgs/backdrop.jpg');
+const bgTexture = loader.load(backdropTexture);
 bgTexture.colorSpace = THREE.SRGBColorSpace;
 scene.background = bgTexture;
 
