@@ -6,10 +6,8 @@ import { Planet } from './planets.js';
 const scene = new THREE.Scene();
 
 // add objects to the scene
-const sunGeometry = new THREE.SphereGeometry(10);
-const sunTexture = new THREE.TextureLoader().load('/sun.jpg');
-const sunMaterial = new THREE.MeshBasicMaterial({map: sunTexture});
-const sunMesh = new THREE.Mesh(sunGeometry, sunMaterial);
+const sun = new Planet(10, 0, "./imgs/sun.jpg");
+const sunMesh = sun.getMesh();
 scene.add(sunMesh);
 
 // mercury
