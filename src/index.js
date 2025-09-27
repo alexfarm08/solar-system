@@ -5,7 +5,7 @@ import earthTexture from '../imgs/earth.jpg';
 import sunTexture from '../imgs/sun.jpg';
 import mercuryTexture from '../imgs/mercary.jpg';
 import venusTexture from '../imgs/Venus.jpg';
-import marsTexture from '../imgs/mars.jpg';
+import marsTexture from '../imgs/mars.webp';
 import jupiterTexture from '../imgs/jupiter.jpg';
 import saturnTexture from '../imgs/saturn.jpg';
 import uranusTexture from '../imgs/uranus.jpg';
