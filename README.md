@@ -6,7 +6,7 @@ An interactive **3D solar system** built with **Three.js** to demonstrate skills
 
 * * *
 
-## 🚀 Features
+## Features
 
 - **3D rendering:** Renders the sun and planets in a WebGL scene using [Three.js](https://threejs.org/).
 - **Orbital animation:** Planets move continuously in their orbits around the sun.
@@ -16,7 +16,7 @@ An interactive **3D solar system** built with **Three.js** to demonstrate skills
 
 * * *
 
-## 📂 Project Structure
+## Project Structure
 
 | Folder / File       | Description                                                          |
 |---------------------|----------------------------------------------------------------------|
@@ -29,7 +29,7 @@ An interactive **3D solar system** built with **Three.js** to demonstrate skills
 
 * * *
 
-## 💻 Tech Stack
+## Tech Stack
 
 - **Three.js** – 3D graphics library for building and animating the scene.
 - **JavaScript ES6+** – Modern syntax and modular code organization.
@@ -38,7 +38,7 @@ An interactive **3D solar system** built with **Three.js** to demonstrate skills
 
 * * *
 
-## 🎯 Key Skills Demonstrated
+## Key Skills Demonstrated
 
 - Building and managing a **3D scene** (scene, camera, renderer, lights).
 - Creating **animation loops** for continuous motion.
@@ -48,7 +48,7 @@ An interactive **3D solar system** built with **Three.js** to demonstrate skills
 
 * * *
 
-## ⚡ Installation & Usage
+## Installation & Usage
 
 ```bash
 # Clone the repository
@@ -69,6 +69,8 @@ npm run build
 
 * * *
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+<img width="200" height="100" alt="Armstrong_Stacked" src="https://github.com/user-attachments/assets/f899d005-b9a1-419b-a11f-4de111611034" />
